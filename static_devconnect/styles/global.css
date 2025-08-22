@@ -1,0 +1,43 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Oi&display=swap'); */
+
+@font-face {
+    font-family: billabong;
+    src: url(../assets/fonts/Billabong/billabong.ttf),
+        url(../assets/fonts/Billabong/billabong_regular.otf);
+}
+
+:root {
+    --cor-preto: #000000;
+    --cor-azul: #2686cc;
+    --cor-branco: #ffffff;
+    --cor-cinza-escuro1: #b6b6b6;
+    --cor-cinza-escuro2: #4d4d4d;
+    --cor-cinza-escuro3: #7d7d7d;
+    --cor-cinza-escuro4: #d1d1d1;
+    --cor-cinza-medio: #e5e5e5;
+    --cor-cinza-claro: #fafafa;
+
+    --borda: 1px solid var(--cor-cinza-medio);
+    --borda-arredondada: 2px;
+
+    --tamanho-fonte-lg: 20px;
+    --tamanho-fonte-md: 16px;
+    --tamanho-fonte-sm: 14px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: var(--cor-cinza-claro);
+}
+
+h1 {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
