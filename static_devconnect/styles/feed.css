@@ -4,8 +4,8 @@ main {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-   
-   
+
+
 }
 
 .container-flex-publi {
@@ -28,7 +28,7 @@ main {
     gap: 30px;
 }
 
-#storys::-webkit-scrollbar{
+#storys::-webkit-scrollbar {
     width: 0;
 }
 
@@ -39,7 +39,8 @@ main {
 .card-story>button {
     background-color: transparent;
     border: none;
-    /* text-decoration: none; */ /*SÓ PARA QUEM ESTÁ COM A TAG <a>*/
+    /* text-decoration: none; */
+    /*SÓ PARA QUEM ESTÁ COM A TAG <a>*/
 
     font-size: var(--tamanho-fonte-sm);
     color: var(--cor-preto);
@@ -59,11 +60,11 @@ main {
 }
 
 /* seção criar publi */
-.formulario-botao-azul{
+.formulario-botao-azul {
     width: 130px;
 }
 
-#criar-publi{
+#criar-publi {
     padding: 10px;
     padding: 10px;
     display: flex;
@@ -72,23 +73,23 @@ main {
     gap: 15px;
 }
 
-#criar-publi>h2{
+#criar-publi>h2 {
     color: var(--cor-cinza-escuro2);
     font-size: var(--tamanho-fonte-lg);
     font-weight: 700;
 }
 
 
-#criar-publi > form > textarea{
+#criar-publi>form>textarea {
     width: 100%;
     height: 80px;
     padding: 10px;
     resize: none;
-    border: var(--borda );
-    
+    border: var(--borda);
+
 }
 
-#criar-publi > form > textarea::placeholder{
+#criar-publi>form>textarea::placeholder {
     color: var(--cor-cinza-medio);
 }
 
@@ -98,45 +99,47 @@ main {
     gap: 10px;
     padding: 10px;
 }
- 
-#publicacoes{
-    background-color:rgb(101, 101, 227) ;
+
+#publicacoes {
+    background-color: rgb(101, 101, 227);
     width: 100%;
-   
+
 }
 
-.card-publi{
+.card-publi {
     background-color: var(--cor-branco);
     width: 100%;
     height: 600px;
 }
 
-#foto-de-perfil{
+#foto-de-perfil {
 
     width: 40px;
     height: 40px;
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
+
+}
+
+.card-publi>header>a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--cor-preto);
+    padding: 10px;
+    text-transform: lowercase;
+}
+
+.card-publi>figure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     
 }
 
-.card-publi>header>a{
- display: flex;
-align-items: center;
-gap: 10px;
-text-decoration: none;
-color:var(--cor-preto);
-padding: 10px;
-text-transform: lowercase;
-}
-
-.card-publi>figure{
-    display: flex;
-    flex-direction: column;
-}
-
-.imagem-publicacao{
+.imagem-publicacao {
     object-fit: cover;
     object-position: center;
     width: 100%;
@@ -144,40 +147,40 @@ text-transform: lowercase;
 
 }
 
-.card-publi>figure>figcaption{
-    color:var(--cor-preto);
+.card-publi>figure>figcaption {
+    color: var(--cor-preto);
     font-size: var(--tamanho-fonte-md);
-    font-weight:500;
+    font-weight: 500;
     display: flex;
     align-items: center;
-    column-gap: 5px;  
+    column-gap: 5px;
     order: 2;
     margin: 15px;
 }
 
-.descricao-publicacao{
+.descricao-publicacao {
     font-size: var(--tamanho-fonte-sm);
     font-weight: 400;
 }
 
-.interacoes-publicacao{
+.interacoes-publicacao {
     display: flex;
     width: 80px;
     flex-wrap: wrap;
     justify-content: space-between;
     order: 1;
-    margin-left: 15px; 
+    margin-left: 15px;
     margin-top: 15px;
 }
 
-.interacoes-publicacao>button{
+.interacoes-publicacao>button {
     background-color: transparent;
     border: none;
     cursor: pointer;
 
 }
 
-.card-publi>figure>button{
+.card-publi>figure>button {
     background-color: transparent;
     border: none;
 
@@ -188,4 +191,5 @@ text-transform: lowercase;
 
     margin-right: 15px;
     align-items: flex-start;
+    margin-left: 15px;
 }
