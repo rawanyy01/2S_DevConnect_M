@@ -148,6 +148,14 @@ main>div>p {
     border-radius: 50%;
 }
 
+#foto-raw{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
 #logo-mobile {
     display: none;
 }

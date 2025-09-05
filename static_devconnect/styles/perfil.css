@@ -1,0 +1,226 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+    color: #222;
+    padding: 0;
+    margin: 0;
+}
+
+/* Cabeçalho */
+#cabecalho {
+    background: var(--cor-branco);
+    border-bottom: 1px solid var(--cor-cinza-medio);
+    padding: 10px 20px;
+}
+
+#cabecalho nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cabecalho img {
+    height: 30px;
+
+}
+
+.cabecalho-acoes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cabecalho-acoes img {
+    height: 28px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.cabecalho-acoes img:hover {
+    transform: scale(1.1);
+}
+
+.foto-perfil {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solidnone;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+/* Perfil */
+.perfil {
+    /* margin: 20px auto;
+    padding: 10px;
+    width: 45%;
+    margin-top: 30px; */
+    margin: 20px auto;
+    background-color: #29588e;
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+.biografia{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.biografia>div{
+    display: flex;
+    gap: 10px;
+}
+
+#foto-raw {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+
+    object-fit: cover;
+
+}
+
+.nome {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.infos {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.acao {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.links {
+    padding: 6px 12px;
+    border: none;
+    background: none;
+    color: #0077ff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.links:hover {
+    background: #0077ff;
+    color: white;
+}
+
+.sair {
+    border-color: red;
+    color: red;
+}
+
+.sair:hover {
+    background: red;
+    color: white;
+}
+
+/* Divider */
+.divider {
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Seção de publicações */
+.secao-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: bold;
+    padding: 10px 0;
+    color: #333;
+}
+
+.secao-titulo img {
+    height: 20px;
+}
+
+/* Posts */
+.posts {
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.post h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: var(--cor-preto);
+}
+
+.post p {
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.actions img {
+    height: 22px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.actions img:hover {
+    transform: scale(1.2);
+}
+
+.likes {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Comentários */
+.comentarios {
+    color: var(--cor-cinza-medio);
+    font-weight: lighter;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.comentarios:hover {
+    text-decoration: underline;
+}
