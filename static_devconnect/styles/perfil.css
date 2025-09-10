@@ -68,8 +68,8 @@ header {
     width: 45%;
     margin-top: 30px; */
     margin: 20px auto;
-    background-color: #29588e;
     width: 90%;
+    height: 300px;
     max-width: 900px;
     display: flex;
     justify-content: center;
@@ -83,6 +83,12 @@ header {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    font-size: var(--tamanho-fonte-lg);
+    font-weight: 400;
+}
+
+.biografia>p {
+    font-weight: 700;
 }
 
 .biografia>div{
@@ -95,7 +101,6 @@ header {
     height: 120px;
     border-radius: 50%;
     display: flex;
-
     object-fit: cover;
 
 }
@@ -122,10 +127,19 @@ header {
     padding: 6px 12px;
     border: none;
     background: none;
-    color: #0077ff;
+    color: #0d76ed;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s;
+    font-size: medium;
+}
+
+#informacoes>span{
+   font-weight: bold;
+   font-size: 15px;
+   display: flex;
+   align-items: center;
+   
 }
 
 .links:hover {
